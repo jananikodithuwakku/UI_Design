@@ -8,6 +8,7 @@ function App() {
 
         <li><a href="#/assignment_1">UI Design 01</a></li>
         <li><a href="#/assignment_2">UI Design 02</a></li>
+        <li><a href="#/assignment_3">UI Design 03</a></li>
       </ul>
     </>
   );
