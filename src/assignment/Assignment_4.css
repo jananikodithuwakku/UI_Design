@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #fffefe;
 }
 
 .container4[data-theme="dark"] {
