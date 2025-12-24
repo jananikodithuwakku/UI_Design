@@ -1,0 +1,108 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.page6 {
+  width: 85vw;
+  height: 85vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(5px);
+  transform: scale(1.15);
+  z-index: -2;
+  
+}
+
+.bg-dark {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45); 
+  z-index: -1;
+}
+
+.calendar-card {
+  width: 260px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #ffffff;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+
+.card-header {
+  height: 130px;
+  background-image: url("./bg.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.header-text {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  color: white;
+}
+
+.header-text h2 {
+  font-size: 15px;
+  margin: 0;
+  font-weight: 700;
+}
+
+.header-text p {
+  font-size: 12px;
+  margin: 2px 0 0;
+  opacity: 0.85;
+  font-weight: 700;
+}
+
+.card-body {
+  padding: 14px;
+}
+
+.week-days {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.weekend {
+  color: #e74c3c;
+}
+
+.dates {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  font-size: 12px;
+}
+
+.dates span {
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 4px;
+}
+.sunday {
+  color: #e74c3c;
+  font-weight: 600;
+}
+
+.today {
+  background: #16a085;
+  color: white;
+  font-weight: 600;
+}
