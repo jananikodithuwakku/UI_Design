@@ -38,7 +38,7 @@ export default function Assignment_7() {
       bgX.current -= 0.3;
       containerRef.current.style.backgroundPositionX = `${bgX.current}px`;
 
-      groundX.current -= 2;
+      groundX.current -= 4;
       groundRef.current.style.backgroundPositionX = `${groundX.current}px`;
 
       setTrees((prev) =>
