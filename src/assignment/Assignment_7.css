@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container7 {
+    position: relative;
+    width: 90vw;
+    height: 90vh;
+    background-image: url("./images/dino-run-game-sky.png");
+    overflow: hidden;
+    background-repeat: repeat-x;
+    background-size: auto 80vh;
+}
+
+.dino {
+    position: absolute;
+    left: 120px;
+    bottom: 90px;
+    width: 64px;
+    height: 64px;
+    background-image: url("./images/dino-run-game-dino.gif");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.dino.jump {
+    animation: jump 0.7s ease-out;
+    background-image: url("./images/dino-run-game-dino-jump.gif");
+}
+
+@keyframes jump {
+    0% {bottom: 90px;}
+    50% {bottom: 200px;}
+    100% {bottom: 90px;}
+}
+
+.tree {
+    position: absolute;
+    bottom: 73px;
+    width: 60px;
+    height: 70px;
+    background-image: url("./images/dino-run-game-tree.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.ground {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background-image: url("./images/dino-run-game-ground.jpg");
+    background-repeat: repeat-x;
+    background-size: auto 100%;
+}
